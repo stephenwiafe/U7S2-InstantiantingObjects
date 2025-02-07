@@ -15,8 +15,7 @@ public class AlgoChallenge {
      */
 
     public static Boolean range3050(int one, int two) {
-
-        return null;
+        return ((one >= 30 && one <= 40 && two >= 30 && two <= 40) || (one >= 40 && one <= 50 && two >= 40 && two <= 50));
     }
 
      /* Problem 21
@@ -31,9 +30,16 @@ public class AlgoChallenge {
      */
 
     public static Boolean compareLastDigit(int value1, int value2) {
-
-        return null;
+        return (value1 % 10 == value2 % 10);
     }
 
+    public static void main(String[] args) {
+        System.out.println(range3050(30, 31));
+        System.out.println(range3050(30, 41));
+        System.out.println(range3050(40, 50));
 
+        System.out.println(compareLastDigit(7, 17));
+        System.out.println(compareLastDigit(6, 17));
+        System.out.println(compareLastDigit(3, 113));
+    }
 }
